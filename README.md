@@ -10,10 +10,10 @@ This npm package enables any JavaScript code to print or display multiple colore
 ## Usage
 Install the package
 
-##### install via npm
+#### install via npm
 `npm i terminal-text-color`
 
-##### install via yarn
+#### install via yarn
 `yarn add terminal-text-color`
 
 Import the package into your application
@@ -43,7 +43,7 @@ console.log(ttc.redBG('My text background color is red'))
 ```
 
 ## List of color methods
-#### foreground colors
+### foreground colors
 teal, aqua, bisque, blueviolet, brown, cadetblue,
 chocolate, coral, crimson, gold, goldenrod,
 darkblue, darkcyan, darkgoldenrod, darkgray,
@@ -55,7 +55,7 @@ steelblue, warning, success, error, info,
 black, red, blue, white, magenta, yellow,
 cyan, green, gray,
     
-#### background colors
+### background colors
 blackBG, blueBG, cyanBG, 
 grayBG, greenBG, magentaBG, redBG, whiteBG,
 yellowBG, tealBG, aquaBG, 
@@ -68,9 +68,9 @@ darkturquoiseBG, turquoiseBG, darkvioletBG,
 fuchsiaBG, purpleBG,  pinkBG, maroonBG, 
 steelblueBG, warningBG, successBG, infoBG, errorBG
 
-There are few methods to specify the color of your choice if the predefined colors could not server you purpose.
+There are few methods to specify the color of your choice, if the predefined colors could not server you purpose.
 They are: `fgColor`, `bgColor`, `fgColorRGB`, `bgColorRGB`,  `fgColorHex`, `bgColorHex`.
-Note that you should always call reset when you use any of these function as in.
+Note that you should always call reset when you use any of these methods as in.
 ```javascript
 console.log(fgColorHex('2de6a9'), 'Try an see my text color', reset());
 ```
