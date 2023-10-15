@@ -107,4 +107,33 @@ Object.defineProperty(exports, "reverse", { enumerable: true, get: function () {
 Object.defineProperty(exports, "hidden", { enumerable: true, get: function () { return basics_1.hidden; } });
 Object.defineProperty(exports, "strikethrough", { enumerable: true, get: function () { return basics_1.strikethrough; } });
 Object.defineProperty(exports, "blink", { enumerable: true, get: function () { return basics_1.blink; } });
+const ttc = {
+    teal: defined_colors_1.teal, aqua: defined_colors_1.aqua, bisque: defined_colors_1.bisque, blueviolet: defined_colors_1.blueviolet, brown: defined_colors_1.brown, cadetblue: defined_colors_1.cadetblue,
+    chocolate: defined_colors_1.chocolate, coral: defined_colors_1.coral, crimson: defined_colors_1.crimson, gold: defined_colors_1.gold, goldenrod: defined_colors_1.goldenrod,
+    darkblue: defined_colors_1.darkblue, darkcyan: defined_colors_1.darkcyan, darkgoldenrod: defined_colors_1.darkgoldenrod, darkgray: defined_colors_1.darkgray,
+    darkgreen: defined_colors_1.darkgreen, darkolivegreen: defined_colors_1.darkolivegreen, darkslategray: defined_colors_1.darkslategray,
+    darkorange: defined_colors_1.darkorange, darkmagenta: defined_colors_1.darkmagenta, darkred: defined_colors_1.darkred, tomato: defined_colors_1.tomato,
+    darkturquoise: defined_colors_1.darkturquoise, turquoise: defined_colors_1.turquoise, darkviolet: defined_colors_1.darkviolet,
+    fuchsia: defined_colors_1.fuchsia, purple: defined_colors_1.purple, pink: defined_colors_1.pink, maroon: defined_colors_1.maroon,
+    steelblue: defined_colors_1.steelblue, warning: defined_colors_1.warning, success: defined_colors_1.success, error: defined_colors_1.error, info: defined_colors_1.info,
+    black: defined_colors_1.black, red: defined_colors_1.red, blue: defined_colors_1.blue, white: defined_colors_1.white, magenta: defined_colors_1.magenta, yellow: defined_colors_1.yellow,
+    cyan: defined_colors_1.cyan, green: defined_colors_1.green, gray: defined_colors_1.gray, blackBG: defined_colors_1.blackBG, blueBG: defined_colors_1.blueBG, cyanBG: defined_colors_1.cyanBG,
+    grayBG: defined_colors_1.grayBG, greenBG: defined_colors_1.greenBG, magentaBG: defined_colors_1.magentaBG, redBG: defined_colors_1.redBG, whiteBG: defined_colors_1.whiteBG,
+    yellowBG: defined_colors_1.yellowBG, tealBG: defined_colors_1.tealBG, aquaBG: defined_colors_1.aquaBG,
+    bisqueBG: defined_colors_1.bisqueBG, bluevioletBG: defined_colors_1.bluevioletBG, brownBG: defined_colors_1.brownBG, cadetblueBG: defined_colors_1.cadetblueBG,
+    chocolateBG: defined_colors_1.chocolateBG, coralBG: defined_colors_1.coralBG, crimsonBG: defined_colors_1.crimsonBG, goldBG: defined_colors_1.goldBG, goldenrodBG: defined_colors_1.goldenrodBG,
+    darkblueBG: defined_colors_1.darkblueBG, darkcyanBG: defined_colors_1.darkcyanBG, darkgoldenrodBG: defined_colors_1.darkgoldenrodBG, darkgrayBG: defined_colors_1.darkgrayBG,
+    darkgreenBG: defined_colors_1.darkgreenBG, darkolivegreenBG: defined_colors_1.darkolivegreenBG, darkslategrayBG: defined_colors_1.darkslategrayBG,
+    darkorangeBG: defined_colors_1.darkorangeBG, darkmagentaBG: defined_colors_1.darkmagentaBG, darkredBG: defined_colors_1.darkredBG, tomatoBG: defined_colors_1.tomatoBG,
+    darkturquoiseBG: defined_colors_1.darkturquoiseBG, turquoiseBG: defined_colors_1.turquoiseBG, darkvioletBG: defined_colors_1.darkvioletBG,
+    fuchsiaBG: defined_colors_1.fuchsiaBG, purpleBG: defined_colors_1.purpleBG, pinkBG: defined_colors_1.pinkBG, maroonBG: defined_colors_1.maroonBG,
+    steelblueBG: defined_colors_1.steelblueBG, warningBG: defined_colors_1.warningBG, successBG: defined_colors_1.successBG, infoBG: defined_colors_1.infoBG,
+    errorBG: defined_colors_1.errorBG,
+    //color functions
+    fgColor: ansi_1.fgColor, bgColor: ansi_1.bgColor, fgColorRGB: ansi_1.fgColorRGB, bgColorRGB: ansi_1.bgColorRGB, fgColorHex: ansi_1.fgColorHex, bgColorHex: ansi_1.bgColorHex,
+    //Text modifiers
+    reset: basics_1.reset, dim: basics_1.dim, italic: basics_1.italic, bold: basics_1.bold, underline: basics_1.underline,
+    reverse: basics_1.reverse, hidden: basics_1.hidden, strikethrough: basics_1.strikethrough, blink: basics_1.blink,
+};
+exports.default = ttc;
 //# sourceMappingURL=index.js.map
