@@ -1,7 +1,10 @@
-import { bgColorRGB, fgColorRGB } from "./ansi";
-import { reset } from "./basics";
+import ttcColorApi from "./ansi";
+import ttcModifiers from "./basics";
 import ansiES from "./color-constants";
 import { textCodeHelper } from "./funcs";
+
+const {reset} = ttcModifiers;
+const { bgColorRGB, fgColorRGB } = ttcColorApi;
 
 /**
  * print black text to the console
@@ -477,8 +480,7 @@ const infoBG = (text: string) => {
 };
 
 
-
-export {
+const colors = {
     teal, aqua, bisque, blueviolet, brown, cadetblue,
     chocolate, coral, crimson, gold, goldenrod,
     darkblue, darkcyan, darkgoldenrod, darkgray,
@@ -501,4 +503,6 @@ export {
     steelblueBG, warningBG, successBG, infoBG,
     errorBG,
 }
+
+export default colors;
 

@@ -1,5 +1,7 @@
 import { describe, expect, test } from '@jest/globals';
-import { aqua, aquaBG } from '../src/defined-colors';
+import colors from '../src/defined-colors';
+
+const { aqua, aquaBG } = colors;
 
 describe('', () => {
     test("aqua('aqua color text') returns \\x1b[38;2;0;255;255maqua color text\x1b[0m", () => {

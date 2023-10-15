@@ -29,7 +29,7 @@ const {red, magneta, gold, blueBG} = require('terminal-text-color');
 ```javascript
 import ttc from 'terminal-text-color';
 
-//You can use object distructuring to import needed methodes
+//You can use name import to import needed methodes
 import {red, magneta, gold, blueBG} from 'terminal-text-color';
 ```
 `ttc` is an object that has some methods that can be use to change the text color or text bacground color to choice color.
@@ -85,7 +85,7 @@ console.log(fgColorHex('2de6a9'), 'Try an see my text color', reset());
 | `bgColorHex` | Define a color by specifying a three hexadecimal digits or six hexadecimal digits as in CSS for text background color. it accepts one hex string value as an argument. ```console.log(bgColorHex('ff0'), 'This is yellow text background'); console.log(bgColorHex('ffff00'), 'This is still a yellow text background'); console.log(bgColorHex('ffff0'), 'Wrong hex color value. No effect');``` |
 
 
-There are few text modifyers methods for modifying the console text depending on the support of the your terminal.
+There are few text modifiers methods for modifying the console text depending on the support of the your terminal.
 These include: `underline`, `italic`, `strikethrough`, `blink`, `reset`, `dim`, `bold`, `reverse`, `hidden`.
 These methods can receive argument when called `except reset`, or can be called with argument. As in
 ```javascript
@@ -99,7 +99,7 @@ console.log(underline('This text will be underlined'));
 ```
 
 
-### Text Modifyers mothods:
+### Text modifiers mothods:
 
 | method | Description |
 | -------- | ---------- |

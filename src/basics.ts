@@ -110,8 +110,8 @@ const strikethrough = (text?: string) => {
     }
     return ansiES.format.strikethrough;
 }
-
-export {
+const ttcModifiers = {
     reset, dim, italic, bold, underline,
     reverse, hidden, strikethrough, blink,
 };
+export default ttcModifiers
