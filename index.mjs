@@ -1,4 +1,4 @@
-import ttc from './index';
+import ttc from './index.js';
 
 const {
     teal, aqua, bisque, blueviolet, brown, cadetblue,
@@ -63,3 +63,5 @@ export {
     reset, dim, italic, bold, underline,
     reverse, hidden, strikethrough, blink,
 }
+
+export default ttc;

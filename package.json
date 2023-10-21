@@ -4,9 +4,9 @@
   "description": "This npm package enables any JavaScript code to print or display multiple colored text and colored text background to the terminal or console.",
   "main": "./dist/index.js",
   "exports": {
-    "default": "./dist/index.js",
-    "import": "./dist/index.mjs",
-    "require": "./dist/index.cjs"
+    "import": "./index.mjs",
+    "require": "./index.js",
+    "default": "./index.js"
   },
   "type": "commonjs",
   "scripts": {
