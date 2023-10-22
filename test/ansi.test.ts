@@ -1,7 +1,5 @@
 import { describe, expect, test } from '@jest/globals';
-import ttcColorApi from '../src/ansi';
-
-const { bgColor, bgColorHex, bgColorRGB, fgColor, fgColorHex, fgColorRGB } = ttcColorApi;
+import { bgColor, bgColorHex, bgColorRGB, fgColor, fgColorHex, fgColorRGB }  from '../src/ansi';
 
 describe('Foreground Color', () => {
     test('fgColor(30)) returns \\x1b[38;5;30m', () => {

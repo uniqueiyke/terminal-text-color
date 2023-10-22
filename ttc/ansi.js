@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.bgColorHex = exports.fgColorHex = exports.bgColorRGB = exports.fgColorRGB = exports.bgColor = exports.fgColor = void 0;
 const funcs_1 = require("./funcs");
 /**
  * Accept number between 30 - 37 and 90 - 97
@@ -18,6 +19,7 @@ const fgColor = (n) => {
     }
     return `\x1b[38;5;${n}m`;
 };
+exports.fgColor = fgColor;
 /**
  * Accept number between 40 - 47 and 100 - 107
  * black: 40, red: 41,  green: 42,  yellow: 43, blue: 44,
@@ -35,6 +37,7 @@ const bgColor = (n) => {
     }
     return `\x1b[48;5;${n}m`;
 };
+exports.bgColor = bgColor;
 /**
  * Define color by using RGB color model. Specify the
  * three color values of Reg, Green and Blue to get the desired text color
@@ -51,6 +54,7 @@ const fgColorRGB = (r, g, b) => {
     (0, funcs_1.logError)(`(${r}, ${g}, ${b}) are wrong parameter value. Each of the arguments should be between 0 and 255 both inclusive`);
     return `\x1b[0m`;
 };
+exports.fgColorRGB = fgColorRGB;
 /**
  * Define color by using RGB color model. Specify the
  * three color values of Reg, Green and Blue to get the desired text color
@@ -67,6 +71,7 @@ const bgColorRGB = (r, g, b) => {
     (0, funcs_1.logError)(`(${r}, ${g}, ${b}) are wrong parameter value. Each of the arguments should be between 0 and 255 both inclusive`);
     return `\x1b[0m`;
 };
+exports.bgColorRGB = bgColorRGB;
 /**
  * Define a color by specifying a three hexadecimal
  * digits or six hexadecimal digits
@@ -83,6 +88,7 @@ const fgColorHex = (hex) => {
     }
     return fgColorRGB(hexArr[0], hexArr[1], hexArr[2]);
 };
+exports.fgColorHex = fgColorHex;
 /**
  * Define a color by specifying a three hexadecimal
  * digits or six hexadecimal digits
@@ -99,9 +105,5 @@ const bgColorHex = (hex) => {
     }
     return bgColorRGB(hexArr[0], hexArr[1], hexArr[2]);
 };
-const ttcColorApi = {
-    fgColor, bgColor, fgColorRGB, bgColorRGB,
-    fgColorHex, bgColorHex
-};
-exports.default = ttcColorApi;
+exports.bgColorHex = bgColorHex;
 //# sourceMappingURL=ansi.js.map

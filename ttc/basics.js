@@ -3,6 +3,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.blink = exports.strikethrough = exports.hidden = exports.reverse = exports.underline = exports.bold = exports.italic = exports.dim = exports.reset = void 0;
 const color_constants_1 = __importDefault(require("./color-constants"));
 const funcs_1 = require("./funcs");
 /**
@@ -10,6 +11,7 @@ const funcs_1 = require("./funcs");
  * @returns
  */
 const reset = () => color_constants_1.default.format.reset;
+exports.reset = reset;
 /**
  * Make text bold. This may not work
  * @param text
@@ -22,6 +24,7 @@ const bold = (text) => {
     }
     return color_constants_1.default.format.bold;
 };
+exports.bold = bold;
 /**
  * Make text dim ( decreased text intensity). This may not work
  * @param text
@@ -34,6 +37,7 @@ const dim = (text) => {
     }
     return color_constants_1.default.format.dim;
 };
+exports.dim = dim;
 /**
  * Make text italic. This may not work
  * @param text
@@ -46,6 +50,7 @@ const italic = (text) => {
     }
     return color_constants_1.default.format.italic;
 };
+exports.italic = italic;
 /**
  * underline a text
  * @param text
@@ -58,6 +63,7 @@ const underline = (text) => {
     }
     return color_constants_1.default.format.underline;
 };
+exports.underline = underline;
 /**
  * Make text blink. This may not work
  * @param text
@@ -70,6 +76,7 @@ const blink = (text) => {
     }
     return color_constants_1.default.format.blink;
 };
+exports.blink = blink;
 /**
  * hide text. This may not work
  * @param text
@@ -82,6 +89,7 @@ const hidden = (text) => {
     }
     return color_constants_1.default.format.hidden;
 };
+exports.hidden = hidden;
 /**
  * Swap foreground and background colors
  * @param text
@@ -94,6 +102,7 @@ const reverse = (text) => {
     }
     return color_constants_1.default.format.reverse;
 };
+exports.reverse = reverse;
 /**
  * strikethrough a text. This may not work
  * @param text
@@ -106,9 +115,5 @@ const strikethrough = (text) => {
     }
     return color_constants_1.default.format.strikethrough;
 };
-const ttcModifiers = {
-    reset, dim, italic, bold, underline,
-    reverse, hidden, strikethrough, blink,
-};
-exports.default = ttcModifiers;
+exports.strikethrough = strikethrough;
 //# sourceMappingURL=basics.js.map

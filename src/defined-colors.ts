@@ -1,10 +1,7 @@
-import ttcColorApi from "./ansi";
-import ttcModifiers from "./basics";
+import { bgColorRGB, fgColorRGB } from "./ansi";
+import { reset } from "./basics";
 import ansiES from "./color-constants";
 import { textCodeHelper } from "./funcs";
-
-const {reset} = ttcModifiers;
-const { bgColorRGB, fgColorRGB } = ttcColorApi;
 
 /**
  * print black text to the console
@@ -479,30 +476,27 @@ const infoBG = (text: string) => {
     return textCodeHelper(bgColorRGB(67, 184, 230), text);
 };
 
-
-const colors = {
+export {
     teal, aqua, bisque, blueviolet, brown, cadetblue,
     chocolate, coral, crimson, gold, goldenrod,
     darkblue, darkcyan, darkgoldenrod, darkgray,
     darkgreen, darkolivegreen, darkslategray,
     darkorange, darkmagenta, darkred, tomato,
-    darkturquoise, turquoise, darkviolet, 
-    fuchsia, purple,  pink, maroon, 
+    darkturquoise, turquoise, darkviolet,
+    fuchsia, purple, pink, maroon,
     steelblue, warning, success, error, info,
     black, red, blue, white, magenta, yellow,
-    cyan, green, gray, blackBG, blueBG, cyanBG, 
+    cyan, green, gray, blackBG, blueBG, cyanBG,
     grayBG, greenBG, magentaBG, redBG, whiteBG,
-    yellowBG, tealBG, aquaBG, 
+    yellowBG, tealBG, aquaBG,
     bisqueBG, bluevioletBG, brownBG, cadetblueBG,
     chocolateBG, coralBG, crimsonBG, goldBG, goldenrodBG,
     darkblueBG, darkcyanBG, darkgoldenrodBG, darkgrayBG,
     darkgreenBG, darkolivegreenBG, darkslategrayBG,
     darkorangeBG, darkmagentaBG, darkredBG, tomatoBG,
-    darkturquoiseBG, turquoiseBG, darkvioletBG, 
-    fuchsiaBG, purpleBG,  pinkBG, maroonBG, 
+    darkturquoiseBG, turquoiseBG, darkvioletBG,
+    fuchsiaBG, purpleBG, pinkBG, maroonBG,
     steelblueBG, warningBG, successBG, infoBG,
     errorBG,
-}
-
-export default colors;
+};
 

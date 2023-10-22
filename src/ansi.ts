@@ -109,9 +109,7 @@ const bgColorHex = (hex: string) => {
     return bgColorRGB(hexArr[0], hexArr[1], hexArr[2])
 }
 
-const ttcColorApi = {
+export {
     fgColor, bgColor, fgColorRGB, bgColorRGB, 
     fgColorHex, bgColorHex
 };
-
-export default ttcColorApi;
