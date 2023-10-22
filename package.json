@@ -1,6 +1,6 @@
 {
   "name": "terminal-text-color",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "This npm package enables any JavaScript code to print or display multiple colored text and colored text background to the terminal or console.",
   "exports": {
     "types": "./ttc/types/index.d.ts",
@@ -10,7 +10,7 @@
   },
   "main": "./index.js",
   "type": "commonjs",
-  "types": "./src/index.ts",
+  "types": "./ttc/types/index.d.ts",
   "scripts": {
     "start": "node index.js",
     "tscompile": "tsc",
